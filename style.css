@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1577915435603-24d8e3b66d71?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #3767d0;
+}
+th {
+    background-color: #3767d0;
+}
+img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: auto;
+}
+
+td img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+h1{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
+
+/*tooltip*/
+.custom-tooltip {
+    position: relative;
+    display: inline-flex; /* Menggunakan Flexbox */
+    align-items: center; /* Mengatur vertikal ke tengah */
+}
+
+.custom-tooltip .tooltip-content {
+    visibility: hidden;
+    width: 200px;
+    background-color: #3767d0;
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: calc(100% + 5px); /* Posisi relatif terhadap .custom-tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.custom-tooltip:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.custom-tooltip .tooltip-content img {
+    width: 100%;
+    height: auto;
+}
